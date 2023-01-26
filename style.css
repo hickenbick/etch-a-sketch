@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: 0.5px solid red; */
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  border: 0.5px solid red;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(255, 0, 0, .2);
+  display: flex;
+}
+
+.square {
+  background-color: #ffe19a;
+  border: solid  #fec63e .5px;
+}
+
+
+
+
