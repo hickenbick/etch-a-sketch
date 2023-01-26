@@ -1,31 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;500;700&display=swap');
+:root {
+  --primary-light: #ddd;
+  --primary-dark: #222831;
+  --secondary-dark: #393e46;
+  --secondary-dark-hover: #4a4f57;
+  --secondary-dark-active: #5b5f68;
+  --black: #111720;
+  --primary-yellow: #fac650;
+}
 
 * {
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* border: 0.5px solid red; */
-  box-sizing: border-box;
 }
 
 body {
+  background-color: var(--black);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
+  gap: 32px;
+}
+
+h1{
+  color: var(--primary-yellow);
+  text-align: center;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+h2, .input p {
+  color: var(--primary-light);
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  display: block;
 }
 
 .container {
-  border: 0.5px solid red;
-  height: 100vh;
-  width: 100%;
-  background-color: rgb(255, 0, 0, .2);
-  display: flex;
+  background-color: var(--primary-light);
+  border-radius: 4px;
+  overflow: hidden;
+  height: 450px;
+  display: grid;
+  width: 450px;
 }
 
 .square {
-  background-color: #ffe19a;
-  border: solid  #fec63e .5px;
+  /* border: solid .5px red; */
 }
 
+.input input {
+  color: var(--primary-dark);
+  text-align: center;
+  margin: 8px auto;
+  font-size: 16px;
+  height: 32px;
+  width: 76px;
+}
 
+.input input:focus {
+  outline: none;
+}
 
+.input button {
+  background-color: var(--primary-light);
+  color: var(--black);
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 0 16px;
+  cursor: pointer;
+  margin: 0 auto;
+  height: 32px;
+  border: none;
+}
 
+.input div {
+  text-align: center;
+}
+
+.input button:hover {
+  background-color: var(--primary-yellow);
+  color: var(--black);
+}
